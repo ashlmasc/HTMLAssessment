@@ -1,0 +1,86 @@
+/* User Story #1: Header Style */
+h2.subjectHeader, h3.subjectHeader, h4.subjectHeader, h5.subjectHeader {
+    color: #00a4a7 ; /* turquoise */
+    font-family: sans-serif;
+}
+
+/* User Story #2: Table Style */
+#scoreBoard {
+    border: 2px solid black;
+    text-align: center;
+}
+
+#scoreBoard th {
+    font-weight: bold;
+    color: #D90077 ; /* pink */
+}
+
+/* User Story #3: List Style */
+#teamRoster {
+    list-style-type: none; 
+}
+
+ul {
+    list-style-type: square;
+}
+
+/* User Story #4: Hyperlink Hover Effect */
+a.hyperLink, a.hyperLink:visited, a.hyperLink:hover, a.hyperLink:active {
+    text-decoration: none;
+    background-color: #transparent; /* transparent */
+}
+
+a.hyperLink:hover {
+    background-color: #DAF7A6; /* lime green on hover */
+}
+
+/* User Story #5: Blockquote Style */
+blockquote {
+    background-color: #511660; /* Dark background color: dark purple */
+    color: #DAF7A6 ; /* Light font color: lime green */
+}
+
+/* User Story #6: Background Images for List */
+#teamRoster > li:first-child > ul {
+    /* Stretch goal: reduces opacity of background image */
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('https://upload.wikimedia.org/wikipedia/en/4/44/Denver_Broncos_logo.svg');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+    padding-left: 60px; 
+}
+
+#teamRoster > li:last-child > ul {
+    /* Stretch goal: reduces opacity of background image */
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('https://upload.wikimedia.org/wikipedia/commons/5/5c/Chicago_Bears_logo.svg');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: contain;
+    padding-left: 60px; 
+    
+}
+
+#teamRoster img {
+    display: none;
+}
+
+/* User Story #7: Checkbox List Style */
+#checkbox-grid {
+    list-style-type: none;
+}
+
+/* Stretch Goals */
+
+/* Bold the primary quarterback's name */
+#teamRoster li li ol li:first-child {
+    font-weight: bold;
+}
+
+/* Alternating background colors for table rows */
+#scoreBoard tr:nth-child(even) {
+    background-color: #f2f2f2; /* Light grey for even rows */
+}
+
+#scoreBoard tr:nth-child(odd) {
+    background-color: white; /* White for odd rows */
+}
